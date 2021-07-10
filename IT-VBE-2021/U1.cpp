@@ -3,8 +3,8 @@
 
 #define MAX_DAYS 31
 
-int loadData(const char* path, int data[], int& dataSize);
-int saveData(const char* path, int resultData[], int resultDataSize);
+bool loadData(const char* path, int data[], int& dataSize);
+bool saveData(const char* path, int resultData[], int resultDataSize);
 void calculateData(int data[], int dataSize, int resultData[], int& resultDataSize);
 
 int main()
@@ -19,7 +19,7 @@ int main()
 }
 
 
-int loadData(const char* path, int data[], int& dataSize) {
+bool loadData(const char* path, int data[], int& dataSize) {
     std::ifstream stream(path);
     if (!stream.is_open()) return 0;
     stream >> dataSize;
@@ -31,7 +31,7 @@ int loadData(const char* path, int data[], int& dataSize) {
     return 1;
 }
 
-int saveData(const char* path, int resultData[], int resultDataSize) {
+bool saveData(const char* path, int resultData[], int resultDataSize) {
     std::ofstream stream(path);
     if (!stream.is_open()) return 0;
     stream << "Minimalus laikas\n" << resultData[0] << "\nDienos\n";
