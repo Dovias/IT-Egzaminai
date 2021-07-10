@@ -1,0 +1,9 @@
+8
+Povilas Matematika 5 9 9 9 9 10
+Jonas Istorija 4 10 9 10 10
+Milda Matematika 6 10 8 9 9 9 9
+Asta Informatika 3 10 10 10
+Ieva Matematika 3 9 9 8
+Rima Informatika 3 10 10 7
+Juozas Fizika 2 8 9
+Laura Fizika 1 8
