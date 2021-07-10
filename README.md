@@ -23,7 +23,7 @@ Lietuvių valstybinio brandos egzamino informacinių technologijų sprendimai be
 ## Kaikurios užduotys yra išspręstos labai neoptimizuotai? Kodėl?
 Užduotys buvo sprendžiamos pagal egzamino reikalavimų taisykles, todėl kartais kodas gali atrodyti nelabai optimizuotas. Kartais pasitaiko tokie reikalavimai, kurie padaro kodą labai neoptimizuotą. Pavyzdžiui, 2016 metų IT egzamine, pirmoje užduotyje, yra nurodytas reikalavimas nenaudoti masyvų ar struktūrų, todėl reikia skaityti failą 2 kartus, kas atrodo nelogiška iš architektūrinių principų.
 
-## Programų kompiliavimas
+## Kodo kompiliavimas
 Greitu metu įkelsiu .cmake failus, kad galėtumėte susikompiliuoti programas, pagal jūsų poreikius, šiuo metu neturiu laiko todėl palieku užduotis kolkas taip.
 
 ## Kita svarbi informacija:
