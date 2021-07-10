@@ -38,7 +38,7 @@ int main() {
 
     sortData(resultData, resultDataSize);
 
-    return saveData("U2Rez.txt", resultData, resultDataSize);
+    return saveData("U2rez.txt", resultData, resultDataSize);
 
 }
 
