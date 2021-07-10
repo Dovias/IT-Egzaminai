@@ -25,3 +25,7 @@ Užduotys buvo sprendžiamos pagal egzamino reikalavimų taisykles, todėl karta
 
 ## Programų kompiliavimas
 Greitu metu įkelsiu .cmake failus, kad galėtumėte susikompiliuoti programas, pagal jūsų poreikius, šiuo metu neturiu laiko todėl palieku užduotis kolkas taip.
+
+## Kita svarbi informacija:
+- Šio archyvo sprendimuose trūksta klaidų tikrinimo (error checking). Kaikuriose vietose nėra elementarių if saugumo elementų. Taip yra padaryta dėl to nes visa salygos yra parašytos „hardcoded“ principu bei egzaminas to nereikalauja.
+- Kodėl nenaudojami std::sort, std::vector, std::string? Kiek man žinoma šias C++ implementacijas nelabai mėgsta VBE egzaminuotojai. Teko girdėti istorijų, kad už tai yra mušami balai, kadangi tai yra prilaikoma kaip sukčiavimui. Neklauskite kodėl mes rašome C stiliumi, C++ kompiliatoriams.
