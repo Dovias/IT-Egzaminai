@@ -28,4 +28,4 @@ Greitu metu įkelsiu .cmake failus, kad galėtumėte susikompiliuoti programas, 
 
 ## Kita svarbi informacija:
 - Šio archyvo sprendimuose trūksta klaidų tikrinimo (error checking). Kaikuriose vietose nėra elementarių if saugumo elementų. Taip yra padaryta dėl to nes visa salygos yra parašytos „hardcoded“ principu bei egzaminas to nereikalauja.
-- Kodėl nenaudojami std::sort, std::vector, std::string? Kiek man žinoma šias C++ implementacijas nelabai mėgsta VBE egzaminuotojai. Teko girdėti istorijų, kad už tai yra mušami balai, kadangi tai yra prilaikoma kaip sukčiavimui. Neklauskite kodėl mes rašome C stiliumi, C++ kompiliatoriams.
+- Kodėl nenaudojami <b>std::sort</b>, <b>std::vector</b>, <b>std::string</b>? Kiek man žinoma šias C++ implementacijas nelabai mėgsta VBE egzaminuotojai. Teko girdėti istorijų, kad už tai yra mušami balai, kadangi tai yra prilaikoma kaip sukčiavimui. Dėl to nusprendžiau šių dalykų čia nenaudoti. Neklauskite kodėl mes rašome C kalbos stiliumi, C++ programavimo kalbos kompiliatoriams, tai yra švietimo sistemos didelė nusistovėjusi nesamonė.
