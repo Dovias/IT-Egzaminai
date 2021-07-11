@@ -41,6 +41,7 @@ bool loadData(const char* path, int data[], int& dataSize) {
          */
         stream >> data[i] >> data[i++] >> data[i++] >> data[i++] >> data[i++] ;
     }
+    // Destruktorius uzdaro failo saltini, nes stream objektas yra lokalus kintamasis, kuris iseina is funkcijos.
     return true;
 }
 
@@ -48,6 +49,7 @@ bool saveData(const char* path, int resultData[]) {
     std::ofstream stream(path);
     if (!stream.is_open()) return false;
     stream << resultData[0] << "\n" << resultData[1] << " " << resultData[2] << "\n" << resultData[3] << " " << resultData[4];
+    // Destruktorius uzdaro failo saltini, nes stream objektas yra lokalus kintamasis, kuris iseina is funkcijos.
     return true;
 
 }
