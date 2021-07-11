@@ -41,13 +41,15 @@ bool loadData(const char* path, Bus& data) {
     stream >> temp;
     data.departureTime += temp;
 
-
+    // kadangi .get() metodas nepersoksta new line simbolio automatiskai, tenka ji persokti rankiniu budu su .ignore() metodu.
     stream.ignore();
     for (int i = 0; i < data.busStopAmount; i++) {
         BusStop stop;
-        stream.get(stop.name, 15);
+        //Isgaunam 15 poziciju is failo saltinio
+        stream.get(stop.name, MAX_STOP_NAME);
         stream >> stop.distance;
         data.busStops[i] = stop;
+        // kadangi .get() metodas nepersoksta new line simbolio automatiskai, tenka ji persokti rankiniu budu su .ignore() metodu.
         stream.ignore();
     }
     return true;
