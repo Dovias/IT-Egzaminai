@@ -57,22 +57,28 @@ bool saveData(const char* path, int resultData[]) {
 void calculateData(int data[], int dataSize, int resultData[]) {
     resultData[0] = 0;
     for (int i = 0; i < dataSize; ) {
-        /*
-         * Galima naudoti naujas C++17 inline tipo funkcijas, bet tikriausiai neveiks egzamine nes dar vis standartas C++11
-         * Taip pat siuos datu konvertavimus galima perkelti i loadData() funkcija, bet tada reikia papildomai juos saugoti
-         * greta datu nes reikia datu failo irasymui.
-         */
+        int range1StartMonth = data[i++],
+            range1StartDay= data[i++],
+            range1EndMonth = data[i++],
+            range1EndDay = data[i++];
 
-        int range1Start = (data[i++] == 6 ? 30 : 31) + data[i++];
-        int range1End = (data[i++] == 6 ? 30 : 31) + data[i++];
         int counter = 0;
 
         // Ieskom kitu intervalu atitikmenu siam intervalui auksciau
         for (int j = 0; j < dataSize;) {
-            int range2Start = (data[j++] == 6 ? 30 : 31) + data[j++];
-            int range2End = (data[j++] == 6 ? 30 : 31) + data[j++];
-            // Tikrinam ar intervalas pilnai ieina i kita intervala
-            if (range2Start >= range1Start && range2End <= range1End) {
+            int range2StartMonth = data[j++],
+                range2StartDay = data[j++],
+                range2EndMonth = data[j++],
+                range2EndDay = data[j++];
+            /* Tikrinam ar intervalas pilnai ieina i kita intervala.
+             if (range2StartMonth <= range1StartMonth && range2EndMonth >= range1StartMonth && range2StartDay <= range1StartDay && range2EndDay <= range2EndDay) {
+                counter++;
+             }
+             * Sitas apacioje turetu but pagal viska greitesnis, nes jis prideda viena
+             * salyga tikrinancia ar menesiai skirtingi, jei skirtingi, kiti tikrinimai nereikalingi,
+             * nes jau ir taip aisku, kad ieis i intervala. Sioje vietoje geriausiai butu suskaldyti conditionus i booleanus.
+             */
+            if (range2StartMonth < range1StartMonth && range2EndMonth > range1EndMonth || range2StartMonth == range1StartMonth && range2EndMonth == range1EndMonth && range2StartDay <= range1StartDay && range2EndDay <= range2EndDay) {
                 counter++;
             }
         }
@@ -82,10 +88,10 @@ void calculateData(int data[], int dataSize, int resultData[]) {
          */
         if (counter > resultData[0]) {
             resultData[0] = counter;
-            resultData[1] = data[i-4];
-            resultData[2] = data[i-3];
-            resultData[3] = data[i-2];
-            resultData[4] = data[i-1];
+            resultData[1] = range1StartMonth;
+            resultData[2] = range1StartDay;
+            resultData[3] = range1EndMonth;
+            resultData[4] = range1EndDay;
         }
     }
 }
