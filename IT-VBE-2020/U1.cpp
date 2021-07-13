@@ -71,14 +71,14 @@ void calculateData(int data[], int dataSize, int resultData[]) {
                 range2EndMonth = data[j++],
                 range2EndDay = data[j++];
             /* Tikrinam ar intervalas pilnai ieina i kita intervala.
-             if (range2StartMonth <= range1StartMonth && range2EndMonth >= range1StartMonth && range2StartDay <= range1StartDay && range2EndDay <= range2EndDay) {
+             if (range2StartMonth <= range1StartMonth && range2EndMonth >= range1EndMonth && range2StartDay <= range1StartDay && range2EndDay <= range1EndDay) {
                 counter++;
              }
              * Sitas apacioje turetu but pagal viska greitesnis, nes jis prideda viena
              * salyga tikrinancia ar menesiai skirtingi, jei skirtingi, kiti tikrinimai nereikalingi,
              * nes jau ir taip aisku, kad ieis i intervala. Sioje vietoje geriausiai butu suskaldyti conditionus i booleanus.
              */
-            if (range2StartMonth < range1StartMonth && range2EndMonth > range1EndMonth || range2StartMonth == range1StartMonth && range2EndMonth == range1EndMonth && range2StartDay <= range1StartDay && range2EndDay <= range2EndDay) {
+            if (range2StartMonth < range1StartMonth && range2EndMonth > range1EndMonth || range2StartMonth == range1StartMonth && range2EndMonth == range1EndMonth && range2StartDay <= range1StartDay && range2EndDay <= range1EndDay) {
                 counter++;
             }
         }
