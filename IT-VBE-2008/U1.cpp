@@ -55,7 +55,7 @@ bool saveData(const char* path, int data[]) {
 // Parasykite funkcija marsruto, kuriuo vezta daugiausia keleiviu, numeriui rasti.
 int calculateData(int data[]) {
     int index = 100;
-    for (int i = 100; i < 201; i++) {
+    for (int i = 101; i < 201; i++) {
         if (data[i] > data[index]) {
             index = i;
         }
