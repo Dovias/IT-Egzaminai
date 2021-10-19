@@ -36,7 +36,7 @@ bool saveData(const char* path, int data[]) {
     return true;
 }
 
-// Sukurkite ir parasykite funkcija, kuri suskaiciuoti, kiek buvo suklijuota veliaveliu.
+// Sukurkite ir parasykite funkcija, kuri suskaiciuotu, kiek buvo suklijuota veliaveliu.
 int calculateData(int data[]) {
     // Ternary operatoriai, nelabai gerai nestinti juos, bet kadangi cia 3 indeksai tik todel taip darau.
     int lowest = data[0] < data[1] ? (data[0] < data[2] ? data[0] : data[2]) : (data[1] < data[2] ? data[1] : data[2]);
