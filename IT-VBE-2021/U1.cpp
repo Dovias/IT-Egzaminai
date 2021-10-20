@@ -26,7 +26,7 @@ bool saveData(const char* path, int data[], int dataSize) {
     std::ofstream stream(path);
     if (!stream.is_open()) return false;
     int lowest = INT_MAX, dDataSize;
-    int dData[dataSize/4];
+    int dData[dataSize/9];
     for (int i = 0; i < dataSize; i+=9) {
         int eTime = calculateData(data[i+5], data[i+6], data[i+7], data[i+8]);
         int mTime = calculateData(data[i+1], data[i+2], data[i+3], data[i+4]);
