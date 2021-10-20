@@ -1,64 +1,52 @@
 #include <fstream>
-#include <limits>
-
-#define MAX_DAYS 31
 
 bool loadData(const char* path, int data[], int& dataSize);
-bool saveData(const char* path, int resultData[], int resultDataSize);
-void calculateData(int data[], int dataSize, int resultData[], int& resultDataSize);
+bool saveData(const char* path, int data[], int dataSize);
+int calculateData(int hrMin, int minsMin, int hrMax, int minsMax);
 
-int main()
-{
-    int data[MAX_DAYS*9];
+int main() {
+    int data[31*9];
     int dataSize;
-    if (!loadData("U1.txt", data, dataSize)) return 1;
-    int resultData[1+MAX_DAYS];
-    int resultDataSize;
-    calculateData(data, dataSize, resultData, resultDataSize);
-    return !saveData("U1rez.txt", resultData, resultDataSize);
+    if (!loadData("U1.txt", data, dataSize));
+    return !saveData("U1rez.txt", data, dataSize);
 }
-
 
 bool loadData(const char* path, int data[], int& dataSize) {
     std::ifstream stream(path);
-    if (!stream.is_open()) return 0;
+    if (!stream.is_open()) return false;
     stream >> dataSize;
     dataSize *= 9;
     for (int i = 0; i < dataSize; i++) {
         stream >> data[i];
     }
-    // Destruktorius uzdaro failo saltini, nes stream objektas yra lokalus kintamasis, kuris iseina is funkcijos.
-    return 1;
+    return true;
 }
 
-bool saveData(const char* path, int resultData[], int resultDataSize) {
+bool saveData(const char* path, int data[], int dataSize) {
     std::ofstream stream(path);
-    if (!stream.is_open()) return 0;
-    stream << "Minimalus laikas\n" << resultData[0] << "\nDienos\n";
-    stream << resultData[1];
-    for (int i = 2; i < resultDataSize; i++) {
-        stream << " " << resultData[i];
-    }
-    // Destruktorius uzdaro failo saltini ir iraso tuo paciu momentu i faila, nes stream objektas yra lokalus kintamasis, kuris iseina is funkcijos.
-    return 1;
-}
-
-void calculateData(int data[], int dataSize, int resultData[], int& resultDataSize) {
-    resultData[0] = std::numeric_limits<int>::max();
-    resultDataSize = 0;
-    for (int i = 0; i < dataSize; i++) {
-        int day = data[i];
-        int morningTime = (data[++i]*60 + data[++i]) - (data[++i]*60 + data[++i]);
-        int eveningTime = (data[++i]*60 + data[++i]) - (data[++i]*60 + data[++i]);
-        if (morningTime == 0 || eveningTime == 0) continue;
-
-        int overallTime = (morningTime < 0 ? -morningTime : morningTime) + (eveningTime < 0 ? -eveningTime : eveningTime);
-        if (overallTime < resultData[0]) {
-            resultData[0] = overallTime;
-            resultData[1] = day;
-            resultDataSize = 2;
-        } else if (overallTime == resultData[0]) {
-            resultData[resultDataSize++] = day;
+    if (!stream.is_open()) return false;
+    int lowest = INT_MAX, dDataSize;
+    int dData[dataSize/4];
+    for (int i = 0; i < dataSize; i+=9) {
+        int eTime = calculateData(data[i+5], data[i+6], data[i+7], data[i+8]);
+        int mTime = calculateData(data[i+1], data[i+2], data[i+3], data[i+4]);
+        if (mTime == 0 || eTime == 0) continue;
+        int time = mTime + eTime;
+        if (time < lowest) {
+            lowest = time;
+            dData[0] = data[i];
+            dDataSize = 1;
+        } else if (time == lowest) {
+            dData[dDataSize++] = data[i];
         }
     }
+    stream << "Minimalus laikas\n" << lowest << "\nDienos\n" << dData[0];
+    for (int i = 1; i < dDataSize; i++)
+        stream << ' ' << dData[i];
+    return true;
+}
+
+// Sukurkite ir parasykite funkcija, kuri apskaiciuoja, kiek laiko (minutemis) Laurynas sugaiso begimui.
+int calculateData(int hrMin, int minsMin, int hrMax, int minsMax) {
+    return (hrMax*60+minsMax)-(hrMin*60+minsMin);
 }
