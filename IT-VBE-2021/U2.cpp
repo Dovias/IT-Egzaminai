@@ -16,7 +16,7 @@ void sortData(Subject data[], int dataSize, Subject* sortData[]);
 int main() {
     Subject data[50];
     int dataSize;
-    if (!loadData("U2.txt", data, dataSize)) return 0;
+    if (!loadData("U2.txt", data, dataSize)) return 1;
     return !saveData("U2rez.txt", data, dataSize);
 }
 
