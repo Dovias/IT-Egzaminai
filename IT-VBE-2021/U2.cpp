@@ -20,29 +20,6 @@ int main() {
     return !saveData("U2rez.txt", data, dataSize);
 }
 
-bool saveData(const char* path, Subject data[], int dataSize) {
-    std::ofstream stream(path);
-    if (!stream.is_open()) return false;
-    if (dataSize == 0) {
-        stream << "Neatitinka vidurkis";
-        return true;
-    }
-    Subject* sortedData[dataSize];
-    sortData(data, dataSize, sortedData);
-    // Nesvarus isspausdinimas, reikia sugalvoti geresni buda isvengti papildomo \n gale.
-    stream << sortedData[0]->name << ' ' << sortedData[0]->sAmount;
-    for (int j = 0; j < sortedData[0]->sAmount; j++) {
-        stream << '\n' << sortedData[0]->students[j] ;
-    }
-    for (int i = 1; i < dataSize; i++) {
-        stream << '\n' << sortedData[i]->name << ' ' << sortedData[i]->sAmount;
-        for (int j = 0; j < sortedData[i]->sAmount; j++) {
-            stream << '\n' << sortedData[i]->students[j] ;
-        }
-    }
-    return true;
-}
-
 bool loadData(const char* path, Subject data[], int& dataSize) {
     std::ifstream stream(path);
     if (!stream.is_open()) return false;
@@ -71,6 +48,30 @@ bool loadData(const char* path, Subject data[], int& dataSize) {
     }
     return true;
 }
+
+bool saveData(const char* path, Subject data[], int dataSize) {
+    std::ofstream stream(path);
+    if (!stream.is_open()) return false;
+    if (dataSize == 0) {
+        stream << "Neatitinka vidurkis";
+        return true;
+    }
+    Subject* sortedData[dataSize];
+    sortData(data, dataSize, sortedData);
+    // Nesvarus isspausdinimas, reikia sugalvoti geresni buda isvengti papildomo \n gale.
+    stream << sortedData[0]->name << ' ' << sortedData[0]->sAmount;
+    for (int j = 0; j < sortedData[0]->sAmount; j++) {
+        stream << '\n' << sortedData[0]->students[j] ;
+    }
+    for (int i = 1; i < dataSize; i++) {
+        stream << '\n' << sortedData[i]->name << ' ' << sortedData[i]->sAmount;
+        for (int j = 0; j < sortedData[i]->sAmount; j++) {
+            stream << '\n' << sortedData[i]->students[j] ;
+        }
+    }
+    return true;
+}
+
 
 // Sukurkite ir parasykite funkcija, kuri surikiuotu populiariausiu dalyku sarasa. (Insertion sort algoritmas)
 void sortData(Subject data[], int dataSize, Subject* sData[]) {
