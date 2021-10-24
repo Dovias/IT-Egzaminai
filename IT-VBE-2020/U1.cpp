@@ -36,8 +36,8 @@ bool saveData(const char* path, int data[]) {
     stream << data[sInterval];
     int eInterval = sInterval;
     while (data[eInterval] == data[sInterval]) eInterval++;
-    sInterval++;
-    stream << '\n' << sInterval/31+6 << ' ' << sInterval-indexMap[sInterval/31] << '\n' << eInterval/31+6 << ' ' << eInterval-indexMap[eInterval/31];
+    int sIndex = (++sInterval)/31, eIndex = eInterval/31; // Sie kintamieji yra menesiu santykiai nuo 0 iki 2. Juos naudojam isgauti menesio dienas bei menesius.
+    stream << '\n' << sIndex+6 << ' ' << sInterval-indexMap[sIndex] << '\n' << eIndex+6 << ' ' << eInterval-indexMap[eIndex];
     return true;
 }
 
@@ -45,8 +45,7 @@ bool saveData(const char* path, int data[]) {
 // kai zydi daugiausia geliu, vieta vasaros dienu sarase.
 int calculateData(int data[], int dataSize) {
     int biggest = 0;
-    for (int i = 0; i < dataSize; i++) {
+    for (int i = 0; i < dataSize; i++)
         if (data[i] > data[biggest]) biggest = i;
-    }
     return biggest;
 }
