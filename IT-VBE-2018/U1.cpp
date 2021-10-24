@@ -20,8 +20,7 @@ bool loadData(const char* path, int data[]) {
         stream >> letter;
         int amount;
         stream >> amount;
-        // Iseina perfect hash. R, G, Z ASCII reiksmes isideda i skirtingus indeksus.
-        data[letter % 3] += amount;
+        data[letter % 3] += amount; // Iseina perfect hash. R, G, Z ASCII reiksmes isideda i skirtingus indeksus.
     }
     return true;
 }
