@@ -48,5 +48,5 @@ bool saveData(const char* path, int data[], int dataSize) {
 
 // Sukurkite ir parasykite funkcija, kuri apskaiciuoja, kiek laiko (minutemis) Laurynas sugaiso begimui.
 int calculateData(int hrMin, int minsMin, int hrMax, int minsMax) {
-    return (hrMax*60+minsMax)-(hrMin*60+minsMin);
+    return (hrMax * 60 + minsMax) - (hrMin * 60 + minsMin);
 }
