@@ -28,7 +28,7 @@ bool saveData(const char* path, int(& data)[MAX_STUDENT_AMOUNT]) {
 }
 
 // Parasykite funkcija, kuri skaiciuotu, kiek sachmatu komplektu galima sudaryti is mokiniu atnestu baltu figuru.
-int calculateData(int (& data)[MAX_STUDENT_AMOUNT]) {
+int calculateData(int(& data)[MAX_STUDENT_AMOUNT]) {
     static int chessTable[6] = {8, 2, 2, 2, 1, 1};
 
     int addedData[6] = {};
