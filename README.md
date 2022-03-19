@@ -15,7 +15,7 @@ Nacionalinės švietimo agentūros valstybinių informacinių technologijų bran
 |2013 m.|[Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/03/3679_2013-IT-1-uzd-intern.pdf)<br>*(8-10 psl.)*|Pildoma||
 |2012 m.|[Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/03/2730_IT-1-2012.pdf)<br>*(14-16 psl.)*|Pildoma||
 |2011 m.|[Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/03/2062_IT-VBE-1_2011.pdf)<br>*(16-18 psl.)*|Pildoma||
-|2010 m.|[Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/04/1602_IT-pagr-2010.pdf)<br>*(16-18 psl.)*|Pildoma||
+|2010 m.|[Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/04/1602_IT-pagr-2010.pdf)<br>*(16-18 psl.)*|[1 užduoties sprendimas](https://github.com/Dovias/IT-VBE-Egzaminai/blob/main/IT-VBE-2010/U1.cpp)</br>[2 užduoties sprendimas](https://github.com/Dovias/IT-VBE-Egzaminai/blob/main/IT-VBE-2010/U2.cpp)|[<b>Dovias</b>](https://github.com/Dovias)|
 |2009 m.|[Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/04/1044_uzduotys_2009_VBE_inf_technol.pdf)<br>*(14-16 psl.)*|Pildoma||
 |2008 m.|[Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/04/511_uzduotys_2008_VBE_IT.pdf)<br>*(14-17 psl.)*|[1 užduoties sprendimas](https://github.com/Dovias/IT-VBE-Egzaminai/blob/main/IT-VBE-2008/U1.cpp)</br>[2 užduoties sprendimas](https://github.com/Dovias/IT-VBE-Egzaminai/blob/main/IT-VBE-2008/U2.cpp)|[<b>Dovias</b>](https://github.com/Dovias)|
 |2007 m.|[Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/04/80_uzduotys_2007_VBE_IT.pdf)<br>*(13-15 psl.)*|Pildoma||
