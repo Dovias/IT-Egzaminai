@@ -17,10 +17,10 @@ int main() {
 bool uzkrautiDuomenis(const char* failoAdresas, int(& duomenys)[MAX_DIENU_SKAICIUS*3+2]) {
     std::ifstream failas(failoAdresas);
     if (!failas.is_open()) return false; // Patikrina ar failas yra skaitomas.
-    int dienuSkaicius;
+    size_t dienuSkaicius;
     // Patikrina ar yra kokia nors duomenys, kad galetumem apdoroti,
     // o jeigu yra dar patikrina ar jie atitinka reikalavimus.
-    if (!(failas >> dienuSkaicius) || entrySize < 0 || entrySize > MAX_DIENU_SKAICIUS) return false;
+    if (!(failas >> dienuSkaicius) || entrySize > MAX_DIENU_SKAICIUS) return false;
 
     duomenys[0] = MAX_DIENU_SKAICIUS;
     for (size_t i = 0; i < dienuSkaicius; i++) {
