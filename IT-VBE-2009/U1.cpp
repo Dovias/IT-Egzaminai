@@ -35,6 +35,8 @@ bool uzkrautiDuomenis(const char* failoAdresas, unsigned int(& duomenys)[MAX_PIN
     for (size_t i = indeksas+1, j = indeksas+duomenys[indeksas]*2; i < j; i++) {
         if (!(failas >> duomenys[i]) || duomenys[i] > MAX_PINIGU_KIEKIS) return false;
     }
+    
+    // Failo objekto destruktorius uzdaro failo saltini, todel naudoti failas.close() nebutina.
     return true;
 }
 
@@ -68,6 +70,8 @@ bool issaugotiDuomenis(const char* failoAdresas, unsigned int(& duomenys)[MAX_PI
         monetuSuma += monetos;
     }
     failas << monetuSuma;
+
+    // Failo objekto destruktorius uzdaro failo saltini, todel naudoti failas.close() nebutina.
     return true;
 }
 
