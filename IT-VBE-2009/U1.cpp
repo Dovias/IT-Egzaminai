@@ -7,6 +7,7 @@ bool issaugotiDuomenis(const char* failoAdresas, unsigned int(& duomenys)[MAX_PI
 unsigned int apdorotiDuomenis(unsigned int(& duomenys)[MAX_PINIGU_KIEKIS*2+1]);
 
 int main() {
+    // unsigned siuo atveju reiskia kad duomenu reiksmes bus ne mazesnes nei 0. (duomenys[x] >= 0)
     unsigned int duomenys[MAX_PINIGU_KIEKIS*4+2];
     if (!uzkrautiDuomenis("U1.txt", duomenys)) return 1;
     return !issaugotiDuomenis("U1rez.txt", duomenys);
