@@ -9,7 +9,7 @@ Nacionalinės švietimo agentūros valstybinių informacinių technologijų bran
 |2019 m.|[Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/02/8018_IT-VBE-1_2019.pdf)<br>*(6-8 psl.)*|Pildoma||
 |2018 m.|[Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/03/7417_IT-VBE-1_2018-GALUTINE.pdf)<br>*(5-7 psl.)*|[1 užduoties sprendimas](https://github.com/Dovias/IT-VBE-Egzaminai/blob/main/IT-VBE-2018/U1.cpp)<br>Pildoma|[<b>Dovias</b>](https://github.com/Dovias)|
 |2017 m.|[Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/03/6996_IT-VBE-1_2017-GALUTINE.pdf)<br>*(8-10 psl.)*|Pildoma||
-|2016 m.|[Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/03/6287_IT-VBE-1_2016-GALUTINIS.pdf)<br>*(7-14 psl.)*|[1 užduoties sprendimas](https://github.com/Dovias/IT-VBE-Egzaminai/blob/main/IT-VBE-2016/U1.cpp)<br>Pildoma|Meda Šulskytė|
+|2016 m.|[Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/03/6287_IT-VBE-1_2016-GALUTINIS.pdf)<br>*(7-14 psl.)*|[1 užduoties sprendimas](https://github.com/Dovias/IT-VBE-Egzaminai/blob/main/IT-VBE-2016/U1.cpp)<br>[2 užduoties sprendimas](https://github.com/Dovias/IT-VBE-Egzaminai/blob/main/IT-VBE-2016/U2.cpp)|Meda Šulskytė,<br>[<b>Dovias</b>](https://github.com/Dovias)|
 |2015 m.|[Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/03/5256_IT-VBE-1_2015.pdf)<br>*(7-9 psl.)*|Pildoma||
 |2014 m.|[Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/03/4429_2014-IT-VBE.pdf)<br>*(6-9 psl.)*|Pildoma||
 |2013 m.|[Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/03/3679_2013-IT-1-uzd-intern.pdf)<br>*(8-10 psl.)*|Pildoma||
