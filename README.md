@@ -1,12 +1,15 @@
 # IT-NŠA-Egzaminai
 Nacionalinės švietimo agentūros valstybinių informacinių technologijų brandos egzaminų sprendimai bei užduočių sąlygos patogiam egzamino pasiruošimui. Šis atvirojo kodo archyvas yra man iššūkis ruošiantis man pačiam 2022 m. informacinių technologijų egzaminui, tad jei rasit kokią klaidą ar neefektyvią dalį, nesupykit ir praneškit man, sutaisysiu :) Visgi rašo kodą ne „senior“ programuotojas o būsimas „junior'as“ :) 
 
+# Perspėjimas!
+Jei esate informacinių technologijų egzaminui ruošimosi stadijoje, prašau nesikliauti šio stiliaus programavimu. Rašydami tokiu stiliumi, yra didelė tikimybė, kad nespėsite padaryti per trumpą laiką jums skirtų užduočių, todėl laikykitės griežtai nurodymų ir spręskit tik taip kaip rašo užduoties sąlygos!
+
 ## Užduočių sąlygų bei sprendimų archyvas (Pildoma dažnai)
 |Vykusio egzamino metai|Praktinių užduočių sąlygos|Praktinių užduočių sprendimai (C++)|Išsprendė|
 |-|-|-|-|
 |2021 m.| [Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/06/IT_2021_pagr.pdf)</br>*(6-8 psl.)*| [1 užduoties sprendimas](https://github.com/Dovias/IT-VBE-Egzaminai/blob/main/IT-VBE-2021/U1.cpp)<br>[2 užduoties sprendimas](https://github.com/Dovias/IT-VBE-Egzaminai/blob/main/IT-VBE-2021/U2.cpp)|[<b>Dovias</b>](https://github.com/Dovias)|
 |2020 m.|[Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/02/8563_IT_2020_pagr_www.pdf)</br>*(6-8 psl.)*|[1 užduoties sprendimas](https://github.com/Dovias/IT-VBE-Egzaminai/blob/main/IT-VBE-2020/U1.cpp)<br>[2 užduoties sprendimas](https://github.com/Dovias/IT-VBE-Egzaminai/blob/main/IT-VBE-2020/U2.cpp)|[<b>Dovias</b>](https://github.com/Dovias)|
-|2019 m.|[Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/02/8018_IT-VBE-1_2019.pdf)<br>*(6-8 psl.)*|Pildoma||
+|2019 m.|[Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/02/8018_IT-VBE-1_2019.pdf)<br>*(6-8 psl.)*|[1 užduoties sprendimas](https://github.com/Dovias/IT-VBE-Egzaminai/blob/main/IT-VBE-2019/U1.cpp)|[<b>Dovias</b>](https://github.com/Dovias)|
 |2018 m.|[Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/03/7417_IT-VBE-1_2018-GALUTINE.pdf)<br>*(5-7 psl.)*|[1 užduoties sprendimas](https://github.com/Dovias/IT-VBE-Egzaminai/blob/main/IT-VBE-2018/U1.cpp)<br>[2 užduoties sprendimas](https://github.com/Dovias/IT-VBE-Egzaminai/blob/main/IT-VBE-2018/U2.cpp)|[<b>Dovias</b>](https://github.com/Dovias)|
 |2017 m.|[Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/03/6996_IT-VBE-1_2017-GALUTINE.pdf)<br>*(8-10 psl.)*|Pildoma||
 |2016 m.|[Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/03/6287_IT-VBE-1_2016-GALUTINIS.pdf)<br>*(7-14 psl.)*|[1 užduoties sprendimas](https://github.com/Dovias/IT-VBE-Egzaminai/blob/main/IT-VBE-2016/U1.cpp)<br>[2 užduoties sprendimas](https://github.com/Dovias/IT-VBE-Egzaminai/blob/main/IT-VBE-2016/U2.cpp)|Meda Šulskytė,<br>[<b>Dovias</b>](https://github.com/Dovias)|
