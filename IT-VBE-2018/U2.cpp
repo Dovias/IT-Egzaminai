@@ -64,6 +64,7 @@ bool uzkrautiDuomenis(const char* failoAdresas, Slidininkas(& duomenys)[MAX_SLID
     return true;
 }
 
+// Funkcija issauganti duomenis i faila. Reikalauta funkcija uzduoties salygose.
 bool issaugotiDuomenis(const char* failoAdresas, Slidininkas(& duomenys)[MAX_SLIDININKU_KIEKIS], const size_t duomenuIlgis) {
     // Jeigu nurodytas duomenu ilgis yra didesnis nei nurodytas limitas, reiskia, kad duomenys nera teisingi.
     if (duomenuIlgis > MAX_SLIDININKU_KIEKIS) return false;
