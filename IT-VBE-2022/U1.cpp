@@ -48,7 +48,7 @@ int main() {
     }
     sFailas.close();
 
-
+    // Insertion sort algoritmas isrusiuojantis mokiniu duomenis.
     Mokinys* rezultatai[MOKINIU_SKAICIUS];
     rezultatai[0] = &(mokDuomenys[0]);
     for (size_t i = 1; i < MOKINIU_SKAICIUS; i++) {
@@ -60,6 +60,7 @@ int main() {
         rezultatai[j+1] = &(mokDuomenys[i]);
     }
 
+    // Issaugom duomenis.
     std::ofstream oFailas("U1rez.txt");
     if (!oFailas.is_open()) return 5;
     oFailas << didTaskai;
