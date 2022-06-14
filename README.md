@@ -7,6 +7,7 @@ Jei esate informacinių technologijų egzaminui ruošimosi stadijoje, prašau ne
 ## Užduočių sąlygų bei sprendimų archyvas (Pildoma dažnai)
 |Vykusio egzamino metai|Praktinių užduočių sąlygos|Praktinių užduočių sprendimai (C++)|Išsprendė|
 |-|-|-|-|
+|2022 m.| [Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2022/06/IT_2022_pagr.pdf)</br>*(6-8 psl.)*| [1 užduoties sprendimas](https://github.com/Dovias/IT-VBE-Egzaminai/blob/main/IT-VBE-2022/U1.cpp)<br>Pildoma|[<b>Dovias</b>](https://github.com/Dovias)|
 |2021 m.| [Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/06/IT_2021_pagr.pdf)</br>*(6-8 psl.)*| [1 užduoties sprendimas](https://github.com/Dovias/IT-VBE-Egzaminai/blob/main/IT-VBE-2021/U1.cpp)<br>[2 užduoties sprendimas](https://github.com/Dovias/IT-VBE-Egzaminai/blob/main/IT-VBE-2021/U2.cpp)|[<b>Dovias</b>](https://github.com/Dovias)|
 |2020 m.|[Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/02/8563_IT_2020_pagr_www.pdf)</br>*(6-8 psl.)*|[1 užduoties sprendimas](https://github.com/Dovias/IT-VBE-Egzaminai/blob/main/IT-VBE-2020/U1.cpp)<br>[2 užduoties sprendimas](https://github.com/Dovias/IT-VBE-Egzaminai/blob/main/IT-VBE-2020/U2.cpp)|[<b>Dovias</b>](https://github.com/Dovias)|
 |2019 m.|[Egzamino praktinės užduotys](https://www.nsa.smm.lt/wp-content/uploads/2021/02/8018_IT-VBE-1_2019.pdf)<br>*(6-8 psl.)*|[1 užduoties sprendimas](https://github.com/Dovias/IT-VBE-Egzaminai/blob/main/IT-VBE-2019/U1.cpp)|[<b>Dovias</b>](https://github.com/Dovias)|
