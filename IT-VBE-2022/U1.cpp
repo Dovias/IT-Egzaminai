@@ -29,6 +29,8 @@ int main() {
         if (!(sFailas >> uzdDuomenys[i])) return 3;
     }
 
+    // Nuskaitom duomenis ir sudedam i strukturas, tada apskaiciuojam mokiniu duomenis
+    // naudojant mokinys.apskaiciuoti(uzdDuomenys, uzdDuomenuIlgis);
     Mokinys mokDuomenys[MOKINIU_SKAICIUS];
     unsigned int didTaskai = 0;
     sFailas.ignore();
