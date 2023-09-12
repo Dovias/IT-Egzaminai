@@ -1,5 +1,5 @@
 # IT-NŠA-Egzaminai
-Nacionalinės švietimo agentūros valstybinių informacinių technologijų brandos egzaminų sprendimai bei užduočių sąlygos patogiam egzamino pasiruošimui. Šis atvirojo kodo archyvas buvo manęs pačio sukurtas iššūkis besiruoštiant 2022 m. informacinių technologijų egzaminui, todėl jei rasite kokią klaidą ar neefektyvią dalį, nesupykit ir praneškit man, sutaisysiu :)
+Nacionalinės švietimo agentūros valstybinių informacinių technologijų brandos egzaminų sprendimai bei užduočių sąlygos patogiam egzamino pasiruošimui. Šis atvirojo kodo archyvas buvo manęs pačio sukurtas iššūkis besiruošiant 2022 m. informacinių technologijų egzaminui, todėl jei rasite kokią klaidą ar neefektyvią dalį, nesupykit ir praneškit man, sutaisysiu :)
 
 # Perspėjimas!
 Jei esate informacinių technologijų egzaminui ruošimosi stadijoje, prašau nesikliauti šio stiliaus programavimu. Rašydami tokiu stiliumi, yra didelė tikimybė, kad nespėsite padaryti per trumpą laiką jums skirtų užduočių, todėl laikykitės griežtai nurodymų ir spręskit tik taip kaip rašo užduoties sąlygos! **Ši sprendinių „git“ saugykla yra skirta tik algoritmų mokymosi tikslais!**
