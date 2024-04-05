@@ -27,9 +27,6 @@ Jei esate informacinių technologijų egzaminui ruošimosi stadijoje, prašau ne
 ## Kaikurios užduotys yra išspręstos labai neoptimizuotai? Kodėl?
 Užduotys buvo sprendžiamos pagal egzamino reikalavimų taisykles, todėl kartais kodas gali atrodyti nelabai optimizuotas. Kartais pasitaiko tokie reikalavimai, kurie padaro kodą labai neoptimizuotą. Pavyzdžiui, 2016 metų IT egzamine, pirmoje užduotyje, yra nurodytas reikalavimas nenaudoti masyvų ar struktūrų, todėl reikia skaityti failą 2 kartus, kas atrodo nelogiška iš architektūrinių principų.
 
-## Kodo kompiliavimas
-Greitu metu įkelsiu <b>.cmake</b> failus, kad galėtumėte susikompiliuoti programas, pagal jūsų poreikius, šiuo metu neturiu laiko todėl palieku užduotis kolkas taip.
-
 ## Kita svarbi informacija:
 - Šio archyvo sprendimuose trūksta klaidų tikrinimo (angl. error checking). Kaikuriose vietose nėra elementarių if saugumo elementų. Taip yra padaryta dėl to nes visa salygos yra parašytos <b>„hardcoded“</b> principu bei egzaminas to nereikalauja.
 - <s>Kodėl nenaudojami <b>std::sort</b>, <b>std::vector</b>, <b>std::string (išimtis - std::string naudojamas, kai dydis duomenų yra nežinomas, atviri heap elementai tam nenaudojami)</b>? Kiek man žinoma šias C++ implementacijas nelabai mėgsta VBE egzaminuotojai. Teko girdėti istorijų, kad už tai yra mušami balai, kadangi tai yra prilaikoma kaip sukčiavimui. Dėl to nusprendžiau šių dalykų čia nenaudoti. Neklauskite kodėl mes rašome C kalbos stiliumi, C++ programavimo kalbos kompiliatoriams, tai yra švietimo sistemos didelė nusistovėjusi nesąmonė. *(std::string kiek žinau galima naudoti, bet kartais iš failo rašant tiesiog neapsimoka šios implementacijos naudoti, nes mums reikia fiksuoto teksto)*</s>
