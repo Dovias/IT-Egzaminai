@@ -1,5 +1,15 @@
-13
-Milda 6 116
-Ignas 5 73
-Asta Ieva 5 78
-Rima 5 80
+Atsilenkimai 4 56
+Rytas 1
+Diena 1
+Vakaras 2
+Atsispaudimai 5 50
+Rytas 1
+Diena 4
+Prisitraukimai 1 8
+Rytas 1
+Svarmenys 7 94
+Rytas 1
+Diena 3
+Vakaras 3
+Tempimas 2 18
+Vakaras 2

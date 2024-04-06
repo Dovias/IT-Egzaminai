@@ -1,0 +1,9 @@
+8
+2 Atsilenkimai Rytas 10 Prisitraukimai Rytas 8
+3 Atsispaudimai Diena 8 Tempimas Vakaras 8 Atsilenkimai Vakaras 9
+1 Svarmenys Vakaras 11
+3 Svarmenys Diena 10 Svarmenys Diena 12 Atsilenkimai Diena 15
+2 Atsilenkimai Vakaras 22 Svarmenys Vakaras 10
+3 Svarmenys Diena 15 Atsispaudimai Diena 15 Atsispaudimai Diena 5
+2 Svarmenys Rytas 23 Svarmenys Vakaras 13
+3 Atsispaudimai Rytas 10 Atsispaudimai Diena 12 Tempimas Vakaras 10
