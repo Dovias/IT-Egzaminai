@@ -1,6 +1,6 @@
 # Define the input and output file names
 DataFileName = "U1.txt"
-ResultFileName = "U2rez.txt"
+ResultFileName = "U1rez.txt"
 
 # Define a class for reading data from files
 class FileReader:
