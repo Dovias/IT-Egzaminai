@@ -112,6 +112,7 @@ int main() {
   
   israsymas << didziausias_krepsininko_rungtyniu_skaicius << '\n';
   for (int i = 0; i < krepsininku_kiekis; i++) {
+    // patikrinam ar krepsininko rungtynio skaicius sutampa su didziausiu rungtyniu skaiciumi
     if (krepsininku_efektyvumas[i].rungtyniu_skaicius !=
         didziausias_krepsininko_rungtyniu_skaicius) {
       continue;
