@@ -88,8 +88,7 @@ int main() {
     // patikrinam ar krepsininko efektyvumas jau buvo apskaiciuotas (cia set'as labai sueitu, bet tikrinam ranka)
     bool apskaiciuotas_krepsininko_efektyvumas = false;
     for (int j = 0; j < krepsininku_kiekis; j++) {
-      if (krepsininku_duomenys[i].numeris ==
-          krepsininku_efektyvumas[j].numeris) {
+      if (krepsininku_duomenys[i].numeris == krepsininku_efektyvumas[j].numeris) {
         apskaiciuotas_krepsininko_efektyvumas = true;
       }
     }
